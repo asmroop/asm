@@ -1,0 +1,15 @@
+{
+  "name": "Asmroop",
+  "short_name": "Asmroop",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0F1E",
+  "theme_color": "#E8743B",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
