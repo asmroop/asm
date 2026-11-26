@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | ASMROOP</title>
+<meta name="description" content="ASMROOP is building a pan-India network of trusted salons, beauty studios and fashion hubs with one consistent standard of quality.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Noto+Sans+Devanagari:wght@500;600&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+<link rel="canonical"
+href="https://asmroop.in/">
+<link rel="canonical"
+href="https://asmroop.in/about.html">
+<link rel="icon"
+href="/images/logo.png">
+
+<link rel="apple-touch-icon"
+href="/images/logo.png">
+<style>
+
+:root{--navy:#0b2447;--navy-2:#12315f;--ink:#f4f6fb;--muted:#b9c4da;--green:#7ed957;--lime:#c6d483;--line:rgba(255,255,255,.18)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+body{font-family:'Sora',system-ui,sans-serif;background:var(--navy);color:var(--ink);line-height:1.7;font-size:1rem}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{width:min(1080px,100% - 2.5rem);margin-inline:auto}
+section{padding:4.5rem 0;border-top:1px solid var(--line)}
+section.alt{background:var(--navy-2)}
+h1,h2,h3{line-height:1.2;font-weight:700}
+h1{font-size:clamp(2.2rem,6vw,4rem)}
+h2{font-size:clamp(1.7rem,4vw,2.6rem);margin-bottom:1.5rem}
+h3{font-size:1.1rem;margin-bottom:.5rem}
+p{color:var(--muted);max-width:70ch;margin-bottom:1rem}
+.script{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;color:var(--lime)}
+.center{text-align:center}
+.center p{margin-inline:auto}
+.hi{font-family:'Noto Sans Devanagari','Sora',sans-serif;font-weight:600}
+
+/* hero */
+.hero{padding:5rem 0 4rem;border-top:0}
+.hero .wordmark{width:min(560px,90%);margin-bottom:2rem}
+.hero p{font-size:1.15rem}
+.handle{display:inline-block;margin-top:1rem;padding:.5rem 1.5rem;border:1px solid var(--line);border-radius:999px;text-decoration:none}
+
+/* who we are */
+.split{display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:center}
+.brandbox{background:var(--navy-2);border:1px solid var(--line);border-radius:1rem;padding:2.5rem 1.5rem;text-align:center}
+.brandbox img{margin-inline:auto}
+.brandbox .hi{margin-top:1.5rem;font-size:1.35rem;color:var(--ink)}
+
+/* grids */
+.grid{display:grid;gap:1.25rem}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--navy-2);border:1px solid var(--line);border-radius:.75rem;padding:1.5rem}
+.card p{margin:0;font-size:.95rem}
+section.alt .card{background:var(--navy)}
+.problem{display:flex;gap:1rem;align-items:center;padding:1rem 1.25rem;border:1px solid var(--line);border-radius:.75rem}
+.problem i{flex:none;width:.75rem;height:.75rem;border-radius:50%;background:#fff}
+.problem.on i{background:var(--green)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:center}
+.stats img{width:200px}
+.stat b{display:block;font-size:2.4rem;line-height:1.1}
+.stat span{color:var(--muted)}
+
+/* process */
+.steps{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.steps li{counter-increment:s;border-top:2px solid var(--green);padding-top:1rem}
+.steps li::before{content:counter(s);display:inline-grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:#fff;color:var(--navy);font-weight:600;margin-bottom:.75rem}
+.steps p{font-size:.92rem}
+
+/* statements */
+.statement{font-size:clamp(1.15rem,2.4vw,1.5rem);color:var(--ink);max-width:48ch;margin-inline:auto}
+.values{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.values li{padding:1rem 1.25rem;border-left:3px solid var(--green);background:var(--navy-2)}
+.goals{list-style:none;display:grid;gap:.75rem;max-width:70ch}
+.goals li{padding:.9rem 1.25rem;border:1px solid var(--line);border-radius:.75rem}
+.motto img{width:min(420px,80%);margin:2rem auto 0}
+
+/* kpi */
+.kpi{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:0 3rem;max-width:640px}
+.kpi li{padding:.8rem 0;border-bottom:1px solid var(--line)}
+
+/* footer */
+footer{padding:3.5rem 0;border-top:1px solid var(--line);text-align:center}
+footer .logo{width:160px;margin:0 auto 1rem}
+footer .wordmark{width:220px;margin:0 auto 1rem}
+
+@media (max-width:860px){
+ .split,.stats{grid-template-columns:1fr}
+ .g3,.g4,.values{grid-template-columns:repeat(2,1fr)}
+ .steps{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+ section{padding:3rem 0}
+ .g2,.g3,.g4,.values,.kpi{grid-template-columns:1fr}
+}
+a:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<main>
+
+<!-- Hero -->
+<header class="hero">
+ <div class="wrap">
+  <img class="wordmark" src="images/wordmark.png" alt="ASMROOP">
+  <h1><span class="script">About</span> Us</h1>
+  <p>ASMROOP is building a pan-India network of trusted salons, beauty studios and fashion hubs, so every customer gets the same quality in every city and town.</p>
+  <a class="handle" href="#">@asmroopindia</a>
+ </div>
+</header>
+
+<!-- Who we are -->
+<section id="who-we-are">
+ <div class="wrap split">
+  <div>
+   <h2>Who We Are</h2>
+   <p>The inception of ASMROOP was not merely driven by the thought of starting a business; it was born from a deep understanding of a major gap within the salon and beauty industry.</p>
+   <p>We observed that across numerous cities and towns in India, countless salon and beauty professionals deliver exceptional work. However, due to the lack of an established brand presence, they often fail to receive the recognition and value commensurate with their services. On the other hand, customers face the constant challenge of searching for quality salons and trusted artists whenever they travel to a new city or town.</p>
+   <p>In the realm of beauty and makeovers, people naturally tend to trust only those salons and artists whose work they have experienced firsthand. Yet, when visiting a different city or town, they are forced to scout for new locations and unfamiliar professionals. This process consumes time and leaves a lingering uncertainty regarding the quality of service.</p>
+   <p>ASMROOP was conceived as a definitive solution to this very challenge.</p>
+   <p>Our objective is to build a pan-India network of premier salons, beauty studios, makeovers, and fashion hubs where customers receive a consistent standard of service quality, training, and overall experience at every outlet. We envision a future where individuals traveling to any city or town never have to wonder, “Where is the best salon?” Instead, they can place their absolute trust solely in ASMROOP.</p>
+   <p>The ASMROOP franchise model is deeply rooted in this philosophy. Our primary goal is not to establish new greenfield salons from scratch, but rather to partner with existing, successfully operating salons and beauty parlours, integrating them into the ASMROOP network. This empowers local business owners with a strong brand identity while guaranteeing customers reliable, top-tier services.</p>
+   <p>We believe that a resilient brand is built on mutual accountability toward both its franchise partners and its customers. Therefore, ASMROOP franchises are not granted for a lifetime; instead, they are subject to periodic renewals based strictly on performance, service quality, customer satisfaction, and adherence to core brand standards.</p>
+   <p>Our ultimate dream is to expand this network to every district, city, and town across India, establishing ASMROOP as the ultimate benchmark of trust, quality, and consistent experience in salon and beauty services.</p>
+  </div>
+  <aside class="brandbox">
+   <img src="images/wordmark.png" alt="ASMROOP" width="320">
+   <p class="hi">“जहाँ निखरता है, आपका असली रूप”</p>
+  </aside>
+ </div>
+</section>
+
+<!-- Problem -->
+<section id="problem" class="alt">
+ <div class="wrap">
+  <h2><span class="script">The</span> Problem</h2>
+  <p>Today’s brands face several challenges:</p>
+  <div class="grid g2">
+   <div class="problem"><i></i>Building Trust</div>
+   <div class="problem"><i></i>Digital Presence and Visibility</div>
+   <div class="problem on"><i></i>Denser Market</div>
+   <div class="problem on"><i></i>Consistent Quality and Standards Maintenance</div>
+   <div class="problem"><i></i>Customer Retention</div>
+   <div class="problem"><i></i>Changing Customer Expectations</div>
+  </div>
+ </div>
+</section>
+
+<!-- Trust stats -->
+<section id="trust">
+ <div class="wrap stats">
+  <img src="images/logo.png" alt="ASMROOP logo">
+  <div>
+   <h2>Trusted by Brands That Want to Grow</h2>
+   <div class="grid g2">
+    <div class="stat"><b>50+</b><span>Verified Quality &amp; Standards</span></div>
+    <div class="stat"><b>300+</b><span>Customer Trust</span></div>
+    <div class="stat"><b>5+</b><span>Strong Brand Backing</span></div>
+    <div class="stat"><b>98%</b><span>Client Satisfaction</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- Process -->
+<section id="process" class="alt">
+ <div class="wrap">
+  <h2>Our Process</h2>
+  <ol class="steps">
+   <li><h3>Partner Onboarding</h3><p>Partnering with successfully operating local salons instead of building new ones from scratch.</p></li>
+   <li><h3>Standardization Training</h3><p>Training staff and artists on high-end service quality and customer care.</p></li>
+   <li><h3>Network Integration</h3><p>Connecting salons with unified branding and digital booking tools.</p></li>
+   <li><h3>Quality Audit</h3><p>Regularly checking partner locations to ensure they strictly maintain hygiene, service standards, and customer satisfaction.</p></li>
+   <li><h3>Optimize</h3><p>Periodically reviewing performance data and renewing partnerships based on continuous adherence to quality benchmarks.</p></li>
+  </ol>
+ </div>
+</section>
+
+<!-- Why choose us -->
+<section id="why-us">
+ <div class="wrap">
+  <h2>Why Choose Us</h2>
+  <div class="grid g4">
+   <div class="card"><h3>Empowering Local Businesses</h3><p>Partnering with successful local salons to give them immediate brand backing and growth.</p></div>
+   <div class="card"><h3>Digital &amp; Brand Support</h3><p>Seamless integration with digital booking tools and unified branding.</p></div>
+   <div class="card"><h3>Strict Standards</h3><p>Franchises are periodically reviewed and renewed based on hygiene and service benchmarks.</p></div>
+   <div class="card"><h3>Trusted Quality</h3><p>Eliminate guesswork with uniform, premium service across every outlet.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- Purpose / Tagline -->
+<section id="purpose" class="alt center">
+ <div class="wrap">
+  <h2>Brand Purpose</h2>
+  <p>ASMROOP exists to solve the challenges faced by both customers and franchise owners.</p>
+  <p>ASMROOP was founded with a singular purpose: to ensure that customers never have to struggle to find trusted beauty and fashion services in a new city, while empowering franchise owners to receive the recognition and value that match the true quality of their work.</p>
+ </div>
+</section>
+
+<section id="tagline" class="center">
+ <div class="wrap">
+  <h2>Tagline</h2>
+  <p class="hi statement" style="font-size:clamp(1.5rem,4vw,2.4rem)">“जहाँ निखरता है, आपका असली रूप”</p>
+ </div>
+</section>
+
+<!-- Vision / Mission -->
+<section id="vision-mission" class="alt">
+ <div class="wrap grid g2">
+  <div class="card">
+   <h2>Vision</h2>
+   <p>To become India’s most trusted and standardized beauty and fashion network, where every customer receives the exact same quality, trust, and experience across every city and town.</p>
+  </div>
+  <div class="card">
+   <h2>Mission</h2>
+   <p>To connect existing beauty and fashion businesses to the ASMROOP network, empowering them with a strong brand identity, training, technical support, and business collaboration, while providing customers with a trustworthy experience featuring transparent pricing and standardized services.</p>
+  </div>
+ </div>
+</section>
+
+<!-- Core values / purpose -->
+<section id="values">
+ <div class="wrap">
+  <h2><span class="script">Core</span> Values</h2>
+  <ul class="values">
+   <li>Trust</li><li>Customer Satisfaction</li>
+   <li>Quality</li><li>Hygiene and Safety</li>
+   <li>Consistency</li><li>Professional Excellence</li>
+   <li>Transparency</li><li>Partnership and Growth</li>
+  </ul>
+ </div>
+</section>
+
+<section id="core-purpose" class="alt center">
+ <div class="wrap">
+  <h2><span class="script">Core</span> Purpose</h2>
+  <p class="statement">We believe not in changing people, but in bringing out the true beauty that already exists within them.</p>
+ </div>
+</section>
+
+<!-- USP -->
+<section id="usp" class="center">
+ <div class="wrap">
+  <h2>USP (Unique Selling Proposition)</h2>
+  <p class="statement">ASMROOP doesn’t just build new beauty and fashion outlets. We empower success.</p>
+  <p>We partner with established, thriving beauty and fashion studios, integrating them into our network with advanced training, strong brand recognition, and business collaboration to ensure customers enjoy a consistently trusted experience everywhere.</p>
+ </div>
+</section>
+
+<!-- Franchise -->
+<section id="franchise" class="alt">
+ <div class="wrap grid g2">
+  <div class="card">
+   <h2>Franchise Philosophy</h2>
+   <p>The ASMROOP franchise is not a permanent license. It is a responsibility of quality.</p>
+   <p>Only those franchise partners who consistently maintain service quality, customer satisfaction, and brand standards will have their franchise renewed.</p>
+   <p>Our objective is not merely to sell franchises, but to build a strong and trustworthy network.</p>
+  </div>
+  <div class="card">
+   <h2>Franchise Vision</h2>
+   <p>To establish ASMROOP’s presence in every district, city, and town across India, ensuring that customers never have to look for new options for beauty and fashion services no matter where they go.</p>
+   <p>Customers can completely rely on ASMROOP and enjoy the exact same service experience everywhere.</p>
+  </div>
+ </div>
+</section>
+
+<!-- Goals -->
+<section id="goals">
+ <div class="wrap">
+  <h2>Long-Term Goals (5-Year Plan)</h2>
+  <ul class="goals">
+   <li>Establish ASMROOP District Centers across the majority of districts in India.</li>
+   <li>Integrate 100+ salons and beauty stores into the ASMROOP network.</li>
+   <li>Establish the ASMROOP Beauty Brand.</li>
+   <li>Establish the ASMROOP Fashion Brand.</li>
+   <li>Launch the ASMROOP Professional Product Range.</li>
+   <li>Become the most trusted franchise network in the beauty store and fashion store industry.</li>
+  </ul>
+ </div>
+</section>
+
+<!-- Promise / Motto -->
+<section id="promise" class="alt center">
+ <div class="wrap">
+  <h2>Brand Promise</h2>
+  <p class="statement">Wherever ASMROOP is present, customers are guaranteed trusted service, trained professionals, fair pricing, and a consistent experience.</p>
+  <p>Because ASMROOP’s objective is not just to provide a service, but to build trust.</p>
+ </div>
+</section>
+
+<section id="motto" class="center motto">
+ <div class="wrap">
+  <h2>Brand Motto</h2>
+  <p class="statement">A New Identity for Self-Confidence</p>
+  <img src="images/wordmark.png" alt="ASMROOP">
+ </div>
+</section>
+
+<!-- KPIs -->
+<section id="success" class="alt">
+ <div class="wrap">
+  <h2>How We Measure Success</h2>
+  <p>We focus on business metrics, not vanity metrics. Our KPIs include:</p>
+  <ul class="kpi">
+   <li>Revenue Growth</li><li>Return on Investment (ROI)</li>
+   <li>Customer Acquisition</li><li>Brand Awareness</li>
+   <li>Lead Generation</li><li>Customer Retention</li>
+   <li>Conversion Rate</li><li>Community Growth</li>
+  </ul>
+ </div>
+</section>
+
+</main>
+
+
+
+</body>
+</html>
