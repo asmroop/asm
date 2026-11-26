@@ -1,0 +1,17 @@
+/* TEAM */
+
+Brand : ASMROOP
+
+Founder : Ajay Umray
+
+Website : https://asmroop.in
+
+Email : support@asmroop.in
+
+Location : Madhya Pradesh, India
+
+/* THANKS */
+
+Tailwind CSS
+HTMX
+Ionicons
